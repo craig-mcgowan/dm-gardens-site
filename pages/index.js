@@ -18,6 +18,7 @@ export default function Home() {
           (585)-737-3143 or email danmillergardens@gmail.com.
         </p>
       </main>
+      <Footer/>
     </div>
   );
 }
