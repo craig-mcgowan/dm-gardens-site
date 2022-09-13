@@ -1,0 +1,15 @@
+.footer {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  flex-direction: column;
+  margin: 0 0 1% 1%
+}
+
+.contactLink {
+  text-decoration: none;
+  color: black;
+}
+.contactLink:hover {
+  color: blue;
+}

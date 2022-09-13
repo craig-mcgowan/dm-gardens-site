@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 5%;
+  margin-top: 1em;
+}
+
+.link {
+  padding: 3px;
+  margin-right: 5rem;
+  
+}
+
+.link:hover {
+  background: rgba(46, 81, 57, 0.255);
+  color: white;
+  border-radius: 5px;
+}
+
+.logo {
+  max-height: 4rem;
+  margin: 10px 0 0 10px;
+}
