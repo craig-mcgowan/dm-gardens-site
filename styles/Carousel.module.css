@@ -1,0 +1,30 @@
+.embla {
+  overflow: hidden;
+  border: 3px;
+  border-color: black;
+}
+.embla__container {
+  display: flex;
+  /* overflow: hidden; */
+}
+.embla__slide {
+  flex: 0 0 80%;
+  margin-right: 20px;
+  overflow: hidden;
+  border: 3px;
+  border-color: black;
+
+}
+
+.pic {
+  max-width: 100%;
+  height: auto;
+  max-height: 80vh;
+
+}
+
+@media (min-width: 768px) {
+  .embla__slide {
+    flex: 0 0 80%; /* Breakpoint SM slide covers 50% of the viewport */
+  }
+}

@@ -1,5 +1,5 @@
 import styles from '../styles/Navbar.module.css'
-
+import Link from 'next/link';
 
 export default function Navbar(props) {
   const navLinks = [
@@ -7,6 +7,8 @@ export default function Navbar(props) {
     {text:"Services", url:"/services"},
     {text:"Contact", url:"/contact"}
   ]
+
+
   return (
     <header className={styles.navbar}>
       <img className={styles.logo}
@@ -16,9 +18,11 @@ export default function Navbar(props) {
 
       <nav className={styles.navLinks}>
         {navLinks.map((linky) => (
-          <div className={styles.link}>
+          <Link href={linky.url}>
+            <a className={styles.link}>
               {linky.text}
-          </div>))}
+            </a>
+          </Link>))}
       </nav>
     </header>
   );

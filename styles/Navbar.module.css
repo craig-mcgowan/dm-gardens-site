@@ -8,11 +8,15 @@
   justify-content: space-around;
   margin-right: 5%;
   margin-top: 1em;
+  text-decoration: none;
 }
 
 .link {
-  padding: 3px;
-  margin-right: 5rem;
+  padding: 5px;
+  margin-right: 5%;
+  align-self: center;
+  text-decoration: none;
+  color: black
   
 }
 
