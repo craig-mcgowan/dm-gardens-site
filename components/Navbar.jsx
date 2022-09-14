@@ -11,10 +11,12 @@ export default function Navbar(props) {
 
   return (
     <header className={styles.navbar}>
+      <Link href="/">
       <img className={styles.logo}
         src="https://res.cloudinary.com/dm9ig1vtk/image/upload/v1663018672/Dan%20Miller%20Gardens/danmiller_logo_color_4inch_jezxzg.jpg"
         alt="Dan Miller Gardens"
-      />
+        />
+        </Link>
 
       <nav className={styles.navLinks}>
         {navLinks.map((linky) => (

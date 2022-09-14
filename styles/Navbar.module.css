@@ -30,3 +30,7 @@
   max-height: 4rem;
   margin: 10px 0 0 10px;
 }
+
+.logo:hover {
+  transform: scale(1.05);
+}
