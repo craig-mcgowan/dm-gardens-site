@@ -1,3 +1,4 @@
+import styles from '../styles/Index.module.css'
 
 
 export default function Home() {
@@ -5,8 +6,8 @@ export default function Home() {
     <div className="container">
 
 
-      <main>
-        <p className="description">
+      <main className={styles.main}>
+        <p className={styles.description}>
           Dan is based in Haddonfield, NJ, and specializes in garden design,
           plantings, maintenance, hardscaping, lighting, and irrigation. Full
           web site coming soon! For inquiries, call or text Dan at
