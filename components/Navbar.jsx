@@ -14,7 +14,7 @@ export default function Navbar(props) {
       <Link href="/">
         <img
           className={styles.logo}
-          src="/public/danmiller_logo_white_4inch_navy.svg"
+          src="dm_logo_navybg.svg"
           alt="Dan Miller Gardens"
         />
       </Link>
