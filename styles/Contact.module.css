@@ -1,7 +1,14 @@
 .form {
   width: 90vw;
+  margin-left: 5vw;
 }
 .fieldset {
   display: flex;
   flex-direction: column;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.textarea {
+  resize: none;
 }

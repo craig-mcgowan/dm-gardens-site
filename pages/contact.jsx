@@ -3,10 +3,10 @@ import styles from "../styles/Contact.module.css"
 export default function Contact() {
   return (
     <>
-      <h2>Page Under Construction</h2>
+      <h2>Request a Quote</h2>
       <form action="" method="get" className={styles.form}>
         <fieldset className={styles.fieldset}> 
-          <legend>Contact Dan Miller Gardens</legend>
+          {/* <legend>Contact Dan Miller Gardens</legend> */}
           <label htmlFor="email">Your Email: </label>
           <input type="email" name="email" id="email" />
           <label htmlFor="phone">Your Phone Number:</label>
@@ -23,7 +23,7 @@ export default function Contact() {
           <label htmlFor="subject">Subject:</label>
           <input type="text" name="subject" id="subject" />
           <label htmlFor="body">Message:</label>
-          <textarea name="body" id="body" />
+          <textarea name="body" id="body" className={styles.textarea} />
           <input type="submit" value="Submit" />
         </fieldset>
       </form>

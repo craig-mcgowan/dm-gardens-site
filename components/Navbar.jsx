@@ -1,5 +1,6 @@
 import styles from '../styles/Navbar.module.css'
 import Link from 'next/link';
+import {GiHamburgerMenu} from "react-icons/gi";
 
 export default function Navbar(props) {
   const navLinks = [
@@ -7,7 +8,6 @@ export default function Navbar(props) {
     {text:"Services", url:"/services"},
     {text:"Contact", url:"/contact"}
   ]
-
 
   return (
     <header className={styles.navbar}>
@@ -20,6 +20,10 @@ export default function Navbar(props) {
       </Link>
 
       <nav className={styles.navLinks}>
+        <div className={styles.menuBtn}>
+          <GiHamburgerMenu />
+        </div>
+
         {navLinks.map((linky) => (
           <Link href={linky.url}>
             <a className={styles.link}>{linky.text}</a>

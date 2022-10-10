@@ -16,11 +16,25 @@
   margin-right: 5%;
   align-self: center;
   text-decoration: none;
-  color: black
-  
+  color: black 
 }
 
 .link:hover {
+  background: rgba(46, 81, 57, 0.255);
+  color: white;
+  border-radius: 5px;
+}
+
+.menuBtn {
+  padding: 5px;
+  margin-right: 5%;
+  align-self: center;
+  text-decoration: none;
+  color: black; 
+  display: none;
+}
+
+.menuBtn:hover {
   background: rgba(46, 81, 57, 0.255);
   color: white;
   border-radius: 5px;
@@ -33,4 +47,18 @@
 
 .logo:hover {
   transform: scale(1.05);
+}
+
+@media only screen and (max-width:600px) {
+  .menuBtn {
+    display:block
+  }
+  .logo{
+    width:70vw
+  }
+
+  .link {
+    display:none
+  }
+
 }
