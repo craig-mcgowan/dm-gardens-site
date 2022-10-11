@@ -1,6 +1,6 @@
 import Carousel from "../components/Carousel.jsx"
 
-export default function services() {
+export default function Services() {
 
   
   return (
