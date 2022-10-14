@@ -20,7 +20,7 @@ export default function Navbar(props) {
         />
       </Link>
 
-      {/* <nav className={styles.navLinks}>
+      <nav className={styles.navLinks}>
         <div className={styles.menuBtn}>
           <GiHamburgerMenu />
         </div>
@@ -30,7 +30,7 @@ export default function Navbar(props) {
             <a className={styles.link}>{linky.text}</a>
           </Link>
         ))}
-      </nav> */}
+      </nav>
     </header>
   );
 }
