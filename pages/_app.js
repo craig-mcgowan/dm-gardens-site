@@ -7,6 +7,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Dan Miller Gardens</title>
         <link rel="icon" href="/favicon.ico" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"/>
       </Head>
       <Layout>
         <Component {...pageProps} />
