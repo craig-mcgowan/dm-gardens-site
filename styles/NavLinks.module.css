@@ -49,6 +49,13 @@
   transform: scale(1.05);
 }
 
+.pageIndicator {
+  background-color: navy;
+  width: 80% ;
+  height: 2px;
+  margin: 0 auto;
+}
+
 @media only screen and (max-width:600px) {
   .menuBtn {
     display:block
