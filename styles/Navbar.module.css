@@ -46,7 +46,8 @@
 }
 
 .logo:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
+  transform-origin: left;
 }
 
 @media only screen and (max-width:600px) {
@@ -54,9 +55,8 @@
     display:block
   }
   .logo{
-    width:70vw;
-    justify-self: center;
-    margin: 10px auto
+    width:40vw;
+    margin: 10px
   }
 
   .link {
