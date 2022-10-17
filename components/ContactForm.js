@@ -6,13 +6,14 @@ import emailjs from "@emailjs/browser";
 const ContactForm = (props) => {
   const sendEmail = (data) => {
     console.log(data)
+    console.log(process.env.YOUR_PUBLIC_KEY);
 
     emailjs
       .send(
-        process.env.NEXT_PUBLIC_YOUR_SERVICE_ID,
-        process.env.NEXT_PUBLIC_YOUR_TEMPLATE_ID,
+        process.env.YOUR_SERVICE_ID,
+        process.env.YOUR_TEMPLATE_ID,
         data,
-        process.env.NEXT_PUBLIC_YOUR_PUBLIC_KEY
+        process.env.YOUR_PUBLIC_KEY
       )
       .then(
         function (response) {
