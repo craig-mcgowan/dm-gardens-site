@@ -1,0 +1,27 @@
+
+.container {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.263);
+  right:0;
+  top: 0;
+  height: 100vh;
+  width: 0vw;
+  transition: width 0.3s ease-in-out;
+
+}
+
+.containerOpen {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.803);
+  right:0;
+  top: 0;
+  height: 100vh;
+  width: 70vw;
+  transition: width 0.3s ease-in-out;
+}
+
+@media only screen and (min-width:600px) {
+  .container .containerOpen {
+    display: none
+  }
+}

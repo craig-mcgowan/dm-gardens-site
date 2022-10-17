@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import styles from '../styles/Navbar.module.css'
 import Link from 'next/link';
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -11,6 +12,10 @@ export default function Navbar(props) {
     {text:"Projects", url:"/projects"}
   ]
 
+
+  
+
+
   return (
     <header className={styles.navbar}>
       <Link href="/">
@@ -22,7 +27,7 @@ export default function Navbar(props) {
       </Link>
 
       <nav className={styles.navLinks}>
-        <div className={styles.menuBtn}>
+        <div className={styles.menuBtn} onClick= {()=>props.toggler()}>
           <GiHamburgerMenu />
         </div>
         <NavLinks/>

@@ -1,11 +1,16 @@
 import { useState, useEffect } from "react"
 import NavLinks from "./navLinks"
+import styles from "../styles/SideBar.module.css"
 
-const SideBar = (props) => {
+
+const SideBar = ({barOpen}) => {
+
   return (
-    <div className={}>
-      <NavLinks/>
+    <div className={barOpen? styles.containerOpen: styles.container} >
+      <NavLinks />
     </div>
-  )
+  );
 
 }
+
+export default SideBar;
