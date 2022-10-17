@@ -5,21 +5,22 @@ import emailjs from "@emailjs/browser";
 
 const ContactForm = (props) => {
   const sendEmail = (data) => {
-    
+    console.log(data)
 
     emailjs
-      .sendForm(
+      .send(
+
         process.env.YOUR_SERVICE_ID,
         process.env.YOUR_TEMPLATE_ID,
         data,
         process.env.YOUR_PUBLIC_KEY
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
         },
-        (error) => {
-          console.log(error.text);
+        function (error) {
+          console.log("FAILED...", error);
         }
       );
   };
