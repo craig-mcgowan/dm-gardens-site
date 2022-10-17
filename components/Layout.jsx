@@ -24,7 +24,7 @@ export default function Layout({ children }) {
   return (
     <>
       <div onClick={() => closeSidebar()}>
-        <Navbar toggler={handleToggleSidebar} />
+        <Navbar toggler={handleToggleSidebar} linkStyle="headerLink" />
         <main className={styles.mainContent}>{children}</main>
         <Footer />
       </div>

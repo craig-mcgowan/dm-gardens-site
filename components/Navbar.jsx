@@ -27,10 +27,10 @@ export default function Navbar(props) {
       </Link>
 
       <nav className={styles.navLinks}>
-        <div className={styles.menuBtn} onClick= {()=>props.toggler()}>
+        <div className={styles.menuBtn} onClick={() => props.toggler()}>
           <GiHamburgerMenu />
         </div>
-        <NavLinks/>
+        <NavLinks listStyle="headerList" linkStyle="headerLink" />
       </nav>
     </header>
   );
