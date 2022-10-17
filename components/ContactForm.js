@@ -2,18 +2,31 @@ import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import styles from "../styles/ContactForm.module.css";
 import emailjs from "@emailjs/browser";
+function getStaticProps() {
+  return {
+    props: {
+      publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY,
+      serviceID: process.env.NEXT_PUBLIC_SERVICE_ID,
+      templateID: process.env.NEXT_PUBLIC_TEMPLATE_ID,
+    },
+  };
+}
 
 const ContactForm = (props) => {
-  const sendEmail = (data) => {
-    console.log(data)
-    console.log(process.env.PUBLIC_KEY);
 
+
+  const sendEmail = async(data) => {
+    const templateID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+    const publicKey= process.env.NEXT_PUBLIC_PUBLIC_KEY
+    const serviceID = process.env.NEXT_PUBLIC_SERVICE_ID
+    console.log( publicKey)
+    
     emailjs
       .send(
-        process.env.YOUR_SERVICE_ID,
-        process.env.YOUR_TEMPLATE_ID,
+        serviceID,
+        templateID,
         data,
-        process.env.PUBLIC_KEY
+        "2keBwGdc-OeKRLha8"
       )
       .then(
         function (response) {
