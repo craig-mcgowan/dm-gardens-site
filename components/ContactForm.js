@@ -15,7 +15,7 @@ function getStaticProps() {
 const ContactForm = (props) => {
 
 
-  const sendEmail = async(data) => {
+  const sendEmail = (data) => {
     const templateID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
     const publicKey= process.env.NEXT_PUBLIC_PUBLIC_KEY
     const serviceID = process.env.NEXT_PUBLIC_SERVICE_ID
@@ -23,8 +23,8 @@ const ContactForm = (props) => {
     
     emailjs
       .send(
-        serviceID,
-        templateID,
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
         data,
         "2keBwGdc-OeKRLha8"
       )
