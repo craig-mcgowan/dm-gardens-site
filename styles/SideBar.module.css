@@ -4,7 +4,7 @@
   background-color: rgba(0, 0, 0, 0.263);
   right:0;
   top: 0;
-  height: 100vh;
+  height: 100%;
   width: 0vw;
   transition: width 0.3s ease-in-out;
   overflow: hidden;
@@ -16,7 +16,7 @@
   background-color: rgba(0, 0, 0, 0.803);
   right:0;
   top: 0;
-  height: 100vh;
+  height: 100%;
   width: 70vw;
   transition: width 0.3s ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.263);

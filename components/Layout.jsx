@@ -28,7 +28,7 @@ export default function Layout({ children }) {
         <main className={styles.mainContent}>{children}</main>
         <Footer />
       </div>
-      <SideBar barOpen={barOpen} />
+      <SideBar barOpen={barOpen} className={styles.sidebar} />
     </>
   );
 }
