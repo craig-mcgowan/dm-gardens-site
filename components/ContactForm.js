@@ -1,8 +1,30 @@
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import styles from "../styles/ContactForm.module.css";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = (props) => {
+  const sendEmail = (data) => {
+    
+
+    emailjs
+      .sendForm(
+        process.env.YOUR_SERVICE_ID,
+        process.env.YOUR_TEMPLATE_ID,
+        form.current,
+        process.env.YOUR_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+
   const emptyForm = {
     name: "",
     email: "",
@@ -39,9 +61,9 @@ const ContactForm = (props) => {
 
   return (
     <>
-      <h2>Request a Quote</h2>
+      <h2>Request a Free Quote</h2>
       <form
-        onSubmit={handleSubmit(onSubmit)}
+        onSubmit={handleSubmit(sendEmail)}
         method="post"
         className={styles.form}
       >
