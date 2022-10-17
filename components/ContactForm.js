@@ -11,7 +11,7 @@ const ContactForm = (props) => {
       .sendForm(
         process.env.YOUR_SERVICE_ID,
         process.env.YOUR_TEMPLATE_ID,
-        form.current,
+        data,
         process.env.YOUR_PUBLIC_KEY
       )
       .then(
@@ -41,6 +41,7 @@ const ContactForm = (props) => {
     watch,
     formState: { isSubmitting, isSubmitSuccessful, isSubmitted },
   } = useForm({ defaultValues: emptyForm });
+
   // const [formData, setFormData] = useState(emptyForm)
   const onSubmit = async (data) => {
     const res = await fetch("/api/form", {
