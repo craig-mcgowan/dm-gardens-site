@@ -84,44 +84,65 @@ const ContactForm = (props) => {
       >
         <fieldset className={styles.fieldset}>
           {/* <legend>Contact Dan Miller Gardens</legend> */}
-          <label htmlFor="name">Your Name: </label>
-          <input
-            type="text"
-            autoComplete="name"
-            {...register("name", { required: true })}
-          />
-          <label htmlFor="email">Your Email: </label>
-          <input
-            type="email"
-            autoComplete="email"
-            {...register("email", { required: true })}
-          />
-          <label htmlFor="phone">Your Phone Number:</label>
-          <input
-            type="tel"
-            autoComplete="phone"
-            {...register("phone", { required: false })}
-          />
-          <p>Preferred contact method:</p>
-          <div>
-            <label htmlFor="radioEmail">Email</label>
-            <input type="radio" {...register("contactPref")} value="email" />
-            <label htmlFor="radioCall">Phone Call</label>
-            <input type="radio" {...register("contactPref")} value="call" />
-            <label htmlFor="radioText">Text Message</label>
-            <input type="radio" {...register("contactPref")} value="text" />
+          <label className={styles.labels} htmlFor="name">
+            Your Name:
+            <input
+              type="text"
+              placeholder="e.g. John Smith"
+              autoComplete="name"
+              {...register("name", { required: true })}
+            />
+          </label>
+          <label className={styles.labels} htmlFor="email">
+            Your Email:
+            <input
+              type="email"
+              placeholder="name@email.com"
+              autoComplete="email"
+              {...register("email", { required: true })}
+            />
+          </label>
+          <label className={styles.labels} htmlFor="phone">
+            Your Phone Number:
+            <input
+              type="tel"
+              placeholder="555-555-5555"
+              autoComplete="phone"
+              {...register("phone", { required: false })}
+            />
+          </label>
+          <p className={styles.prefChoicesLabel}>Preferred contact method:</p>
+          <div className={styles.prefChoices}>
+            <label className={styles.radioBtn}>
+              <input type="radio"  {...register("contactPref")} value="email" />
+              Email
+            </label>
+            <label className={styles.radioBtn}>
+              <input type="radio" {...register("contactPref")} value="call" />
+              Phone Call
+            </label>
+            <label className={styles.radioBtn}>
+              <input type="radio" {...register("contactPref")} value="text" />
+              Text Message
+            </label>
           </div>
-          <label htmlFor="subject">Subject:</label>
-          <input
-            type="text"
-            autoComplete="subject"
-            {...register("subject", { required: true })}
-          />
-          <label htmlFor="message">Message:</label>
-          <textarea
-            className={styles.textarea}
-            {...register("message", { required: true })}
-          />
+          <label className={styles.labels} htmlFor="subject">
+            Subject:
+            <input
+              type="text"
+              placeholder="What kind of service are you looking for?"
+              autoComplete="subject"
+              {...register("subject", { required: true })}
+            />
+          </label>
+          <label className={styles.labels} htmlFor="message">
+            Message:
+            <textarea
+              placeholder="Tell me a little more about your project"
+              className={styles.textarea}
+              {...register("message", { required: true })}
+            />
+          </label>
           <button
             disabled={isSubmitting}
             className={isSubmitSuccessful ? styles.submitted : styles.submit}

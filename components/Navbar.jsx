@@ -18,7 +18,7 @@ export default function Navbar(props) {
 
   return (
     <header className={styles.navbar}>
-      <Link href="/">
+      <Link href="/" className={styles.logoContainer}>
         <img
           className={styles.logo}
           src="dm_logo_navybg.svg"

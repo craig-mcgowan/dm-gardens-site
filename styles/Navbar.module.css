@@ -1,13 +1,19 @@
 .navbar {
+  position: absolute;
+  top: 0;
   display: flex;
+  width: 100vw;
+  height: 4.5em;
   justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.662);
 }
 
 .navLinks {
   display: flex;
-  justify-content: space-around;
-  margin-right: 5%;
-  margin-top: 1em;
+  justify-content: space-around;  
+  align-items: center;
   text-decoration: none;
 }
 
@@ -41,8 +47,9 @@
 }
 
 .logo {
-  max-height: 12rem;
-  margin: 10px 0 0 10px;
+  max-height: 5rem;
+  margin-left: 10px;
+  margin-top: 10px
 }
 
 .logo:hover {
@@ -51,12 +58,20 @@
 }
 
 @media only screen and (max-width:600px) {
+  .navbar {
+    height: 5em;
+  }
   .menuBtn {
     display:block
   }
   .logo{
-    width:40vw;
-    margin: 10px
+    height:5em;
+    margin-top:5px
+  }
+
+  .navLinks {
+    flex-direction: row-reverse;
+
   }
 
   .link {
