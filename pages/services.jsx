@@ -5,7 +5,7 @@ export default function Services() {
 
   
   return (
-    <div className={styles.servicesPage}>
+    <div className="page">
       <Carousel/>
     </div>
   )

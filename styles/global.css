@@ -22,3 +22,10 @@ body {
   height:auto;
   padding-bottom:4em;
 }
+
+.page {
+  padding-top: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

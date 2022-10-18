@@ -2,7 +2,7 @@ import styles from '../styles/About.module.css'
 
 export default function About() {
   return (
-    <>
+    <div className='page'>
       <h1>About Dan</h1>
       <img className={styles.headshot}
         src="https://res.cloudinary.com/dm9ig1vtk/image/upload/v1663032945/Dan%20Miller%20Gardens/DM_Headshot_myo4n6.webp"
@@ -14,6 +14,6 @@ export default function About() {
         lighting. My goal is to improve the functionality and beauty of your
         outdoor space while providing exceptional service.
       </p>
-    </>
+    </div>
   );
 }
