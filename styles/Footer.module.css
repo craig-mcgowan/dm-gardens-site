@@ -12,8 +12,10 @@
 .contactLink {
   text-decoration: none;
   color: black;
+
 }
 .contactLink:hover {
   color: blue;
-  font-size: medium;
+  font-weight: 900;
+  transition: color .2s ease-in-out;
 }
