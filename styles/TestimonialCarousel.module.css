@@ -1,17 +1,25 @@
+.carouselWrapper{
+  display: flex;
+  margin-bottom: 5em;
+  background-color: rgb(152, 180, 168);
+}
+
+
 .embla {
   overflow: hidden;
   border: 3px;
-  background-color: rgb(152, 180, 168);
   border-color: black;
-  margin-bottom: 5em;
+  width:94%
+  /* display: flex; */
 }
 .embla__container {
   display: flex;
+  /* flex: 80%; */
   /* overflow: hidden; */
 }
 .embla__slide {
   flex: 0 0 90%;
-  margin-right: 10%;
+  margin-right: 6%;
   overflow: hidden;
   font-style: oblique;
   font-weight: bolder;
@@ -24,13 +32,23 @@
 .prevButton {
   background:none;
   border-style: none;
-  position:relative;
+  width:3%;
+  display: flex;
+  font-size: 2em;
+  justify-content: center;
+  align-items: center;
+  /* position:relative; */
   /* bottom: 3em
    */
 }
 .nextButton {
   background:none;
   border-style: none;
+  width: 3%;
+  display: flex;
+  font-size: 2em;
+  justify-content: center;
+  align-items: center;
 }
 
 

@@ -25,27 +25,30 @@ const TestimonialCarousel = (props) => {
 
 
   return (
-    <div className={styles.embla} ref={emblaRef}>
-      <div className={styles.embla__container}>
-        {testimonials.map((testimonial) => (
-          <div className={styles.embla__slide}>
-            <p>
-              <span className={styles.testimonialText}>
-                "{testimonial.review}"
-              </span>{" "}
-              -{testimonial.name}{" "}
-            </p>
-            {/* <img className={styles.pic} src={service.img} alt={service.text} /> */}
-          </div>
-        ))}
-      </div>
+    <section className={styles.carouselWrapper}>
       <button className={styles.prevButton} onClick={scrollPrev}>
         <GrFormPrevious />
       </button>
+      <div className={styles.embla} ref={emblaRef}>
+
+        <div className={styles.embla__container}>
+          {testimonials.map((testimonial) => (
+            <div className={styles.embla__slide}>
+              <p>
+                <span className={styles.testimonialText}>
+                  "{testimonial.review}"
+                </span>{" "}
+                -{testimonial.name}{" "}
+              </p>
+              {/* <img className={styles.pic} src={service.img} alt={service.text} /> */}
+            </div>
+          ))}
+        </div>
+      </div>
       <button className={styles.nextButton} onClick={scrollNext}>
         <GrFormNext />
       </button>
-    </div>
+    </section>
   );
 };
 

@@ -5,12 +5,6 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import NavLinks from './navLinks';
 
 export default function Navbar(props) {
-  const navLinks = [
-    {text:"About", url:"/about"},
-    {text:"Services", url:"/services"},
-    {text:"Contact", url:"/contact"},
-    {text:"Projects", url:"/projects"}
-  ]
 
 
   

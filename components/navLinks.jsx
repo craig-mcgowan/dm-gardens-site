@@ -6,7 +6,7 @@ import styles from "../styles/NavLinks.module.css"
 const NavLinks = ({linkStyle, listStyle}) => {
     const pages = [
     {text:"About", url:"/about"},
-    {text:"Services", url:"/services"},
+    // {text:"Services", url:"/services"},
     {text:"Contact", url:"/contact"},
     {text:"Projects", url:"/projects"}
     ]
