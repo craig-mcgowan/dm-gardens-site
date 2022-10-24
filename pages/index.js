@@ -1,5 +1,6 @@
 import styles from '../styles/Index.module.css'
 import services from '../public/services';
+import TestimonialCarousel from '../components/testimonialCarousel';
 
 export default function Home() {
   return (
@@ -20,8 +21,10 @@ export default function Home() {
               <figcaption>{service.text}</figcaption>
            </figure>
          )
-       })}
+        })}
       </section>
+      <TestimonialCarousel/>
+
     </div>
   );
 }

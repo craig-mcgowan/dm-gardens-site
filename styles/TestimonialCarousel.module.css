@@ -1,0 +1,48 @@
+.embla {
+  overflow: hidden;
+  border: 3px;
+  background-color: rgb(152, 180, 168);
+  border-color: black;
+  margin-bottom: 5em;
+}
+.embla__container {
+  display: flex;
+  /* overflow: hidden; */
+}
+.embla__slide {
+  flex: 0 0 90%;
+  margin-right: 10%;
+  overflow: hidden;
+  font-style: oblique;
+  font-weight: bolder;
+  /* border: 3px;
+  border-style: solid;
+  border-color: black; */
+
+}
+
+.prevButton {
+  background:none;
+  border-style: none;
+  position:relative;
+  /* bottom: 3em
+   */
+}
+.nextButton {
+  background:none;
+  border-style: none;
+}
+
+
+.pic {
+  max-width: 100%;
+  height: auto;
+  max-height: 70vh;
+}
+/* }
+
+@media (min-width: 768px) {
+  .embla__slide {
+    flex: 0 0 80%; 
+  }
+} */
