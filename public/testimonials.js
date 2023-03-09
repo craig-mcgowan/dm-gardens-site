@@ -22,7 +22,7 @@ const testimonials = [
   {
     name: "Maia R.",
     review:
-      "Dan was super professional when redoing our front driveway and garden area, along with our indoor planter and front door planters! They all look so amazing, and he was quick when working and diligent. ",
+      "Dan was super professional when redoing our front driveway and garden area, along with our indoor planter and front door planters! They all look so amazing, and he was quick when working and diligent.",
   },
 ];
 
