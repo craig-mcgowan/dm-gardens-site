@@ -13,15 +13,20 @@ export default function About() {
         Dan Miller Gardens provides landscape design, installation and
         maintenance. Our mission is to improve the appearance and functionality
         of your outdoor space. We aim to make our neighborhoods more beautiful
-        and healthy places to live. Dan’s journey in horticulture started in
-        2007 working for a landscaping company in his hometown of Fairport, NY.
-        After graduating college, Dan moved to New York City to pursue a career
-        in landscape design and received his Certificate of Horticulture from
-        Brooklyn Botanic Garden in 2016. He spent 10 years in New York working
-        for premier landscape design firms, leading projects in upscale
-        residential buildings and commercial properties such as Google, Spotify,
-        Carnegie Hall, Chase Corporate offices and more. Dan lives in
-        Haddonfield, NJ, with his wife and son.
+        and healthy places to live. 
+      </p>
+      <p className={styles.blurb}>
+        Dan’s journey in horticulture started in 2007 working for a landscaping
+        company in his hometown of Fairport, NY. After graduating college, Dan
+        moved to New York City to pursue a career in landscape design and
+        received his Certificate of Horticulture from Brooklyn Botanic Garden in
+        2016. He spent 10 years in New York working for premier landscape design
+        firms, leading projects in upscale residential buildings and commercial
+        properties such as Google, Spotify, Carnegie Hall, Chase Corporate
+        offices and more. Dan lives in Haddonfield, NJ, with his wife and son.
+      </p>
+      <p className={styles.blurb}>
+        Dan lives in Haddonfield, NJ, with his wife and son.
       </p>
     </div>
   );
