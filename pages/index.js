@@ -20,14 +20,16 @@ export default function Home() {
       </div>
       <section className={styles.services}>
         <h3 className={styles.sectionHeader}>Services</h3>
-        {services.map((service) => {
-          return (
-            <figure className={styles.serviceCard}>
-              <img className={styles.serviceThumb} src={service.img}></img>
-              <figcaption>{service.text}</figcaption>
-            </figure>
-          );
-        })}
+        <div className={styles.serviceCards}>
+          {services.map((service) => {
+            return (
+              <figure className={styles.serviceCard}>
+                <img className={styles.serviceThumb} src={service.img}></img>
+                <figcaption>{service.text}</figcaption>
+              </figure>
+            );
+          })}
+        </div>
       </section>
       <TestimonialCarousel />
       <section>

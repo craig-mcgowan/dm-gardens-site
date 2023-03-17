@@ -16,10 +16,11 @@
   border-radius: 10px;
 }
 
-.services {
+.serviceCards {
   /* height: 40em; */
   width: 100vw;
   display: flex;
+  flex: 3;
   flex-wrap: wrap;
   background-color: rgb(237, 237, 237);
   /* padding: 0 10%; */
@@ -27,7 +28,10 @@
 }
 
 .serviceCard {
+  flex: 1 ;
   display: flex;
+  width:50%;
+  flex-basis:50%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -36,15 +40,18 @@
   background-color:white;
   border: 2px solid;
   border-color: rgb(198, 198, 198);
+  overflow: hidden;
   /* box-shadow: 1px 1px 1px black; */
   /* overflow:hidden; */
 }
 
 .serviceThumb{
-  object-fit: cover;
-  height: 14em;
-  width: 14em;
+  object-fit:cover;
+  /* height: 14em;
+  width: 14em; */
   border-radius: 1em;
+  overflow: hidden;
+
 }
 
 .serviceCard:hover {
@@ -60,7 +67,7 @@
 
 .sectionHeader{
   display:block;
-  width: 100vw;
+  width: 100%;
   text-align: center;
   color: var(--dm-navy);
   font-size: 2em;
