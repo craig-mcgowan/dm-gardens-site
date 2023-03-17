@@ -19,6 +19,7 @@ export default function Home() {
         </div>
       </div>
       <section className={styles.services}>
+        <h3 className={styles.sectionHeader}>Services</h3>
         {services.map((service) => {
           return (
             <figure className={styles.serviceCard}>

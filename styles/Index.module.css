@@ -1,3 +1,4 @@
+
 .banner {
   display: flex;
   flex-flow: column;
@@ -21,8 +22,8 @@
   display: flex;
   flex-wrap: wrap;
   background-color: rgb(237, 237, 237);
-  padding: 0 10%;
-  /* justify-content: space-around; */
+  /* padding: 0 10%; */
+  justify-content: space-around;
 }
 
 .serviceCard {
@@ -55,4 +56,14 @@
   .description {
     width: 85vw;
   }
+}
+
+.sectionHeader{
+  display:block;
+  width: 100vw;
+  text-align: center;
+  color: var(--dm-navy);
+  font-size: 2em;
+  font-weight: 1000;
+
 }

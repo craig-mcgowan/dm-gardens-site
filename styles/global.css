@@ -1,3 +1,7 @@
+:root {
+  --dm-navy: #061e3e;
+}
+
 html {
   position: relative;
   padding: 0;
