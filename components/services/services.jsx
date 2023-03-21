@@ -1,5 +1,6 @@
 import styles from './Services.module.css';
 import services from "../../public/services";
+import ServiceCard from './serviceCard';
 
 export default function Services(props) {
   return(
@@ -8,14 +9,7 @@ export default function Services(props) {
   <div className={styles.servicesContainer}>
   {services.map((service) => {
     return (
-      <div className={styles.serviceCard}>
-      <p className={styles.serviceLabel}>{service.text}</p>
-      <img
-      className={styles.serviceThumb}
-      src={service.img}
-      alt={service.text}
-      ></img>
-      </div>
+      <ServiceCard text={service.text} img={service.img} />
       );
     })}
     </div>
