@@ -3,6 +3,11 @@ import services from '../public/services';
 import TestimonialCarousel from '../components/testimonialCarousel';
 
 export default function Home() {
+
+  const handleServiceHover = () => {
+    
+  }
+
   return (
     <div className="container">
       <div className={styles.banner}>
@@ -18,21 +23,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <section className={styles.services}>
-        <h3 className={styles.sectionHeader}>Services</h3>
-        <div className={styles.servicesContainer}>
-          {services.map((service) => {
-            return (
-              <div className={styles.serviceCard}>
-                <p className={styles.serviceLabel}>{service.text}</p>
-                <img className={styles.serviceThumb} src={service.img}>
-
-                </img>
-              </div>
-            );
-          })}
-        </div>
-      </section>
+     
       <TestimonialCarousel />
       <section>
         Our Process Upon making an inquiry into our services, Dan will typically
