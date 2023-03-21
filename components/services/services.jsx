@@ -1,8 +1,8 @@
-import styles from "../styles/Index.module.css";
+import styles from './Services.module.css';
 import services from "../../public/services";
 
 export default function Services(props) {
-  
+  return(
   <section className={styles.services}>
   <h3 className={styles.sectionHeader}>Services</h3>
   <div className={styles.servicesContainer}>
@@ -19,5 +19,6 @@ export default function Services(props) {
       );
     })}
     </div>
-    </section>;
+    </section>
+  )
   }

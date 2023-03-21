@@ -1,5 +1,5 @@
 import styles from '../styles/Index.module.css'
-import services from '../public/services';
+import Services from '../components/services/services';
 import TestimonialCarousel from '../components/testimonialCarousel';
 
 export default function Home() {
@@ -23,6 +23,7 @@ export default function Home() {
           </p>
         </div>
       </div>
+      <Services/>
      
       <TestimonialCarousel />
       <section>
