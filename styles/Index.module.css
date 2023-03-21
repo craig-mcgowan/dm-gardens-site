@@ -16,14 +16,57 @@
   border-radius: 10px;
 }
 
-.serviceCards {
+.servicesContainer {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(237, 237, 237);
+  justify-content: space-around;
+}
+
+.serviceCard {
+  max-width: 49%;
+  max-height: 40em;
+  display: flex;
+  position: relative;
+  padding: 10px 2px
+
+  /* display: flex;
+  overflow:hidden; */
+}
+
+.serviceLabel {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: White;
+  font-size: 2rem;
+  font-weight: 800;
+  z-index: 1;
+
+  
+}
+
+.serviceThumb {
+  max-width: 100%;
+  object-fit: cover;
+  filter:brightness(50%);
+}
+
+.serviceThumb:hover {
+  filter:none;
+  transition-duration: 200ms;
+}
+
+/* .serviceCards {
   
   width: 100vw;
   display: flex;
   flex: 3;
   flex-wrap: wrap;
   background-color: rgb(237, 237, 237);
-  /* padding: 0 10%; */
+  
   justify-content: space-around;
 }
 
@@ -41,14 +84,12 @@
   border: 2px solid;
   border-color: rgb(198, 198, 198);
   overflow: hidden;
-  /* box-shadow: 1px 1px 1px black; */
-  /* overflow:hidden; */
+
+  overflow:hidden;
 }
 
 .serviceThumb{
   object-fit:cover;
-  /* height: 14em;
-  width: 14em; */
   border-radius: 1em;
   overflow: hidden;
 
@@ -57,7 +98,7 @@
 .serviceCard:hover {
   transform: scale(1.02);
   transition: scale 0.3s ease-in-out;
-}
+} */
 
 @media only screen and (max-width:600px) {
   .description {
