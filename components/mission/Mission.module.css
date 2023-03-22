@@ -1,0 +1,9 @@
+.sectionHeader{
+  display:block;
+  width: 100%;
+  text-align: center;
+  color: var(--dm-navy);
+  font-size: 2em;
+  font-weight: 1000;
+
+}
