@@ -18,17 +18,36 @@
   font-size: 2rem;
   font-weight: 800;
   z-index: 1;
+  padding: 3px
 
-  
+}
+
+.serviceLabelHovered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: White;
+  backdrop-filter: blur(.25rem) ;
+  -webkit-backdrop-filter: blur(.25rem);
+  font-size: 2rem;
+  font-weight: 800;
+  z-index: 1;
+  padding: 3px
+
 }
 
 .serviceThumb {
   max-width: 100%;
   object-fit: cover;
   filter:brightness(50%);
+  transition-duration: 200ms;
 }
 
-.serviceThumb:hover {
+.serviceThumbHovered {
+  max-width: 100%;
+  object-fit: cover;
   filter:none;
-  transition-duration: 200ms;
+  transition-duration: 400ms;
+
 }

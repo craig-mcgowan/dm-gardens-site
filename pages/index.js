@@ -4,15 +4,13 @@ import TestimonialCarousel from '../components/testimonialCarousel';
 
 export default function Home() {
 
-  const handleServiceHover = () => {
-    
-  }
+  
 
   return (
     <div className="container">
       <div className={styles.banner}>
         <div className={styles.description}>
-          <p>
+          <p className={styles.slogan}>
             {
               //todo plug in Dan's wording
             }
