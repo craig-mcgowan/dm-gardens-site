@@ -11,11 +11,11 @@
 
 .serviceLabel {
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: White;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 800;
   z-index: 1;
   padding: 3px
@@ -24,13 +24,13 @@
 
 .serviceLabelHovered {
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: White;
   backdrop-filter: blur(.25rem) ;
   -webkit-backdrop-filter: blur(.25rem);
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 800;
   z-index: 1;
   padding: 3px
@@ -55,6 +55,9 @@
 
 @media (width >= 768px) {
   .serviceLabel {
+    font-size: 2rem;
+  }
+  .serviceLabelHovered {
     font-size: 2rem;
   }
   .serviceCard {

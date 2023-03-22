@@ -5,11 +5,11 @@
   align-items: center;
   background-image: url("https://res.cloudinary.com/dm9ig1vtk/image/upload/v1663018679/Dan%20Miller%20Gardens/image_1_uo8tnt.jpg");
   background-size:cover;
-  height: 50vh;
+  height: 60vh;
 }
 
 .description {
-  margin-top: 20vh;
+  margin-top: 18vh;
   width: 50vw;
    backdrop-filter: blur(.75rem) brightness(110%);
   -webkit-backdrop-filter: blur(1rem);
@@ -40,7 +40,7 @@
   width: 100%;
   text-align: center;
   color: white;
-  font-size: 3em;
+  font-size: 2rem;
   font-weight: 1000;
   margin: 0
 
@@ -48,11 +48,11 @@
 
 .slogan{
   display:block;
-  margin: 3px;
+  margin: 2px;
   width: 100%;
   text-align: center;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
   /* font-weight: 1000; */
 }
 
@@ -60,5 +60,20 @@
 @media (width >= 768px) {
  .banner {
   height: 70vh;
+ }
+ .description {
+  margin-top: 20vh;
+ }
+ .dmGardens{
+  font-size: 3em;
+  font-weight: 1000;
+  margin: 0
+
+}
+
+.slogan{
+  margin: 3px;
+  font-size: 1.5rem;
+  /* font-weight: 1000; */
 }
 }
