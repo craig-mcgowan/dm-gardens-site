@@ -17,8 +17,8 @@
 }
 
 .serviceCard {
-  max-width: 49%;
-  max-height: 40em;
+  width: 95vw;
+  /* max-height: 40em; */
   display: flex;
   position: relative;
   padding: 10px 2px
@@ -33,10 +33,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: White;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 800;
   z-index: 1;
-
   
 }
 
@@ -50,3 +49,13 @@
   filter:none;
   transition-duration: 200ms;
 }
+
+@media (width >= 768px) {
+  .serviceLabel {
+    font-size: 2rem;
+  }
+  .serviceCard {
+    max-width: 49%;
+  }
+}
+  
