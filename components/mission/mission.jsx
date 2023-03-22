@@ -28,7 +28,7 @@ export default function Mission(props) {
         return (
           <>
             <p>{value}</p>
-            <Icon/>
+            {/* <Icon/> */}
           </>
         )
       
