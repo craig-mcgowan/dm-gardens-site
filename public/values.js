@@ -29,12 +29,6 @@ const values = [
       "Using the best tool for the job is always a top priority in ourwork. Unfortunately landscaping equipment (particularly two-stroke gas engines) can often be noisy and dirty polluters. We keep our equipment in peak condition to ensure high quality work, reduce the risk of injury and keep them running as clean as possible.",
     icon: "GiSpade",
   },
-  {
-    value: "Affordable, Dependable, Quality Work",
-    blurb:
-      "We will work with you and your budget to give you the outdoor space you dream of. Dan's extensive knowledge and industry insight will help transform your landscaping. We know your time is valuable and always communicate clearly and work diligently to get your projects done.",
-    icon: "FaBusinessTime",
-  },
 ];
 
 export default values
