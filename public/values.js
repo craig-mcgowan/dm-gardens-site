@@ -1,3 +1,6 @@
+import { GiSpade, GiHummingbird, GiSewingNeedle } from "react-icons/gi";
+import { FaRecycle, FaHandshake, FaBusinessTime } from "react-icons/fa";
+
 const values = [
   {
     value: "Custom Tailored Solutions",
@@ -21,7 +24,7 @@ const values = [
     value: "Environmental Stewardship",
     blurb:
       "We aim to create landscapes that blend with surrounding natural ecosystems. We believe it’s important to conserve local bird, bee and insect populations of a native landscape. Where applicable, we also planlandscapes to reduce stormwater runoff. We prefer plant material that is native and resistant to drought, which reduces watering needs.",
-    icon: "GiHummingbird",
+    icon: GiHummingbird,
   },
   {
     value: "The Right Tools for the Job",
@@ -31,4 +34,4 @@ const values = [
   },
 ];
 
-export default values
+export default values;
