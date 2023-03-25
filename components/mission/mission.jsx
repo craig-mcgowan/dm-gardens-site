@@ -5,7 +5,6 @@ import {FaRecycle, FaHandshake, FaBusinessTime } from 'react-icons/fa'
 
 
 
-
 export default function Mission(props) {
   // const iconsArr = [
   //   { iconComp: GiHummingbird, name: "GiHummingBird" },
@@ -13,10 +12,6 @@ export default function Mission(props) {
   //   { iconComp: FaHandshake, name: "FaHandshake" },
   //   { iconComp: GiSewingNeedle, name: "GiSewingNeedle" },
   //   { iconComp: FaBusinessTime, name: "FaBusinessTime" },
-  //   GiSewingNeedle,
-    
-  //   FaBusinessTime,
-  //   FaRecycle,
   // ];
 
   return (
