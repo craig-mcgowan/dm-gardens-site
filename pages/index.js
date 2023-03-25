@@ -2,6 +2,7 @@ import styles from '../styles/Index.module.css'
 import Services from '../components/services/services';
 import TestimonialCarousel from '../components/testimonialCarousel';
 import Mission from '../components/mission/mission';
+import ContactForm from '../components/ContactForm';
 
 export default function Home() {
 
@@ -25,7 +26,9 @@ export default function Home() {
       <Services/>
      
       <TestimonialCarousel />
-      <Mission/>
+      <Mission />
+      <ContactForm/>
+      
     </div>
   );
 }

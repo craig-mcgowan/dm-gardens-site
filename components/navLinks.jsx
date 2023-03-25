@@ -8,7 +8,8 @@ const NavLinks = ({linkStyle, listStyle}) => {
     {text:"About", url:"/about"},
     // {text:"Services", url:"/services"},
     {text:"Contact", url:"/contact"},
-    {text:"Projects", url:"/projects"}
+    {text:"Services", url:"/services"},
+    // {text:"Services", url:"/services"},
     ]
   const router = useRouter();
 
