@@ -4,7 +4,6 @@ import ServiceCard from './serviceCard';
 
 export default function Services(props) {
  
-
   return (
     <section className={styles.services} id="Services">
       <h3 className={styles.sectionHeader}>Services</h3>

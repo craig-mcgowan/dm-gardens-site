@@ -75,7 +75,7 @@ const ContactForm = (props) => {
   }, [isSubmitSuccessful, reset]);
 
   return (
-    <section id="Contact">
+    <section className={styles.contactForm} id="Contact">
       <h2>Request a Free Quote</h2>
       <form
         onSubmit={handleSubmit(sendEmail)}

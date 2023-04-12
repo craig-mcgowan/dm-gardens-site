@@ -14,6 +14,14 @@ const values = [
       "We are a service-first company, and our customers’ satisfaction is our top priority. We take great pride in creating and maintaining landscapes and we are always happy to answer any questions before, during or after the completion of a project.",
     icon: FaHandshake,
   },
+  
+  {
+    value: "Dependable, Friendly, Professional",
+    blurb:
+      "Your time is valuable, and you deserve a garden professional who communicates clearly and works with your schedule. We go above and beyond to give accurate timelines and stick to them.",
+    icon: FaBusinessTime,
+  },
+
   {
     value: "Sustainable Landscaping & Gardening",
     blurb:

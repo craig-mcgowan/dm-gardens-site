@@ -2,7 +2,6 @@ import styles from './Mission.module.css'
 import values from '../../public/values'
 import React from 'react'
 import { IconContext } from 'react-icons'
-import ContactForm from '../ContactForm'
 
 
 export default function Mission(props) {
@@ -16,7 +15,7 @@ export default function Mission(props) {
         
           return (
             <div className={styles.valueCard}>
-              <p>{value}</p>
+              <p className={styles.valueLabel}>{value}</p>
               <IconContext.Provider value={{ className: styles.serviceIcon }}>
                 <Icon />
               </IconContext.Provider>
