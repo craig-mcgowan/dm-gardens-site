@@ -18,7 +18,6 @@
 
 .serviceCard {
   width: 95vw;
-  /* max-height: 40em; */
   display: flex;
   position: relative;
   padding: 10px 2px
@@ -56,6 +55,7 @@
   }
   .serviceCard {
     max-width: 49%;
+
   }
 }
   
