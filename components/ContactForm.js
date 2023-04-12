@@ -76,7 +76,7 @@ const ContactForm = (props) => {
 
   return (
     <section className={styles.contactForm} id="Contact">
-      <h2>Request a Free Quote</h2>
+      <h2>Request a Quote</h2>
       <form
         onSubmit={handleSubmit(sendEmail)}
         method="post"
