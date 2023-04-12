@@ -2,9 +2,7 @@ import styles from './Mission.module.css'
 import values from '../../public/values'
 import React from 'react'
 import { IconContext } from 'react-icons'
-import { GiSpade, GiHummingbird, GiSewingNeedle } from 'react-icons/gi'
-import {FaRecycle, FaHandshake, FaBusinessTime } from 'react-icons/fa'
-
+import ContactForm from '../ContactForm'
 
 
 export default function Mission(props) {
@@ -12,22 +10,22 @@ export default function Mission(props) {
   return (
     <section>
       <div className={styles.sectionHeader}>Our Process</div>
-      {values.map(({ value, icon, blurb }) => {
-      const Icon = icon
-  
+      <div className={styles.valuesContainer}>
+        {values.map(({ value, icon, blurb }) => {
+        const Icon = icon
         
-        return (
-          <div className={styles.valuesContainer}>
-            <p>{value}</p>
-            <IconContext.Provider value={{ className: styles.serviceIcon }}>
-              <Icon />
-            </IconContext.Provider>
-
-          </div>
-        )
-      
-      })
-    }
+          return (
+            <div className={styles.valueCard}>
+              <p>{value}</p>
+              <IconContext.Provider value={{ className: styles.serviceIcon }}>
+                <Icon />
+              </IconContext.Provider>
+            </div>
+          )
+        
+        })
+            }
+      </div>
     </section>
   )
 }

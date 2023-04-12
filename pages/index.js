@@ -23,11 +23,11 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <Services/>
+      <Services />
      
       <TestimonialCarousel />
-      <Mission />
-      <ContactForm/>
+      <Mission id='Our Process' />
+      <ContactForm id='Contact'/>
       
     </div>
   );

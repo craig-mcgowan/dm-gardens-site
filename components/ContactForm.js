@@ -75,7 +75,7 @@ const ContactForm = (props) => {
   }, [isSubmitSuccessful, reset]);
 
   return (
-    <>
+    <section id="Contact">
       <h2>Request a Free Quote</h2>
       <form
         onSubmit={handleSubmit(sendEmail)}
@@ -151,7 +151,7 @@ const ContactForm = (props) => {
           </button>
         </fieldset>
       </form>
-    </>
+    </section>
   );
 };
 

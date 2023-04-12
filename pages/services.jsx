@@ -5,8 +5,8 @@ export default function Services() {
 
   
   return (
-    <div className="page">
-      <Carousel/>
+    <div className="page" >
+      <Carousel />
     </div>
-  )
+  );
 }

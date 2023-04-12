@@ -13,6 +13,22 @@ const NavLinks = ({linkStyle, listStyle}) => {
     ]
   const router = useRouter();
 
+  const scroller = elID => {
+    window.scrollTo({
+      top: document.getElementById(elID).offsetTop - 50,
+      behavior: 'smooth'
+    })
+
+  }
+  const onBtnClick = (e) => {
+    e.preventDefault();
+    const goto = e.target.getAttribute("goto");
+    console.log(goto)
+    setTimeout(() => {
+      scroller(goto);
+    }, 100);
+  };
+
   
 
   return (
@@ -20,9 +36,9 @@ const NavLinks = ({linkStyle, listStyle}) => {
       {
         pages.map((linky) => (
           <div>
-            <Link href={linky.url}>
-              <a className={styles[linkStyle]}>{linky.text}</a>
-            </Link>
+            {/* <Link href={linky.url}> */}
+              <a className={styles[linkStyle]} goto={linky.text} onClick={onBtnClick}>{linky.text}</a>
+            {/* </Link> */}
             {router.pathname === linky.url ? <div className={styles.pageIndicator}></div> : <div></div>}
           </div>
         ))}
