@@ -1,0 +1,99 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerList {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10%;
+  margin-top: 1em;
+  text-decoration: none;
+  width: 40vw;
+}
+.sidebarList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 5%;
+  margin-top: 6em;
+  text-decoration: none;
+  height: 40vh;
+
+}
+
+.headerLink {
+  padding: 6px;
+  text-decoration: none;
+  color: black 
+}
+
+.headerLink:hover {
+  background: rgba(46, 81, 57, 0.255);
+  color: white;
+  border-radius: 5px;
+}
+.sidebarLink {
+  padding: 5px;
+  margin-top: 5vh;
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+  font-weight:700;
+}
+
+.sidebarLink:hover {
+  background: rgba(46, 81, 57, 0.255);
+  color: white;
+  border-radius: 5px;
+}
+
+.menuBtn {
+  padding: 5px;
+  margin-right: 5%;
+  align-self: center;
+  text-decoration: none;
+  color: black; 
+  display: none;
+}
+
+.menuBtn:hover {
+  background: rgba(46, 81, 57, 0.255);
+  color: white;
+  border-radius: 5px;
+}
+
+.logo {
+  max-height: 12rem;
+  margin: 10px 0 0 10px;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  transform-origin: left;
+}
+
+.pageIndicator {
+  background-color: navy;
+  width: 80% ;
+  height: 2px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width:600px) {
+  .menuBtn {
+    display:block
+  }
+  .logo{
+    width:70vw;
+    justify-self: center;
+    margin: 10px auto
+  }
+
+  .headerLink {
+    display:none
+  }
+
+
+}

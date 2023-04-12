@@ -1,3 +1,7 @@
+:root {
+  --dm-navy: #061e3e;
+}
+
 html {
   position: relative;
   padding: 0;
@@ -5,19 +9,25 @@ html {
   font-family: 'Montserrat', sans-serif;
   height: 100%;
   width: 100vw;
-  overflow-x: hidden;
+  overflow: hidden;
   overflow-y: scroll;
 }
 
-
-
 body {
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   padding: 0;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
   width: 100vw;
-  height:auto
+  height:auto;
+  padding-bottom:4em;
+}
+
+.page {
+  padding-top: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

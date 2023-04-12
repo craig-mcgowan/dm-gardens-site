@@ -1,11 +1,12 @@
 import Carousel from "../components/Carousel.jsx"
+// import styles from "../styles/Services.module.css"
 
 export default function Services() {
 
   
   return (
-    <>
-      <Carousel/>
-    </>
-  )
+    <div className="page" >
+      <Carousel />
+    </div>
+  );
 }

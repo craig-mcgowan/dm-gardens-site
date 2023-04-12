@@ -1,0 +1,29 @@
+
+.container {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.263);
+  right:0;
+  top: 0;
+  height: 100%;
+  width: 0vw;
+  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+
+}
+
+.containerOpen {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.907);
+  right:0;
+  top: 0;
+  height: 100%;
+  width: 70vw;
+  transition: width 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.263);
+}
+
+@media only screen and (min-width:600px) {
+  .container .containerOpen {
+    display: none
+  }
+}

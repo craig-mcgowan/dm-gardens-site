@@ -1,0 +1,61 @@
+.sectionHeader{
+  display:block;
+  width: 100%;
+  text-align: center;
+  color: var(--dm-navy);
+  font-size: 2em;
+  font-weight: 1000;
+
+}
+
+.servicesContainer {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(237, 237, 237);
+  justify-content: space-around;
+}
+
+.serviceCard {
+  width: 95vw;
+  display: flex;
+  position: relative;
+  padding: 10px 2px
+
+  /* display: flex;
+  overflow:hidden; */
+}
+
+.serviceLabel {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: White;
+  font-size: 1.5rem;
+  font-weight: 800;
+  z-index: 1;
+  
+}
+
+.serviceThumb {
+  max-width: 100%;
+  object-fit: cover;
+  filter:brightness(50%);
+}
+
+.serviceThumb:hover {
+  filter:none;
+  transition-duration: 200ms;
+}
+
+@media (width >= 768px) {
+  .serviceLabel {
+    font-size: 2rem;
+  }
+  .serviceCard {
+    max-width: 49%;
+
+  }
+}
+  

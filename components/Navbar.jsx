@@ -1,18 +1,18 @@
+import { useState, useEffect } from 'react';
 import styles from '../styles/Navbar.module.css'
 import Link from 'next/link';
-import {GiHamburgerMenu} from "react-icons/gi";
+import { GiHamburgerMenu } from "react-icons/gi";
+import NavLinks from './navLinks';
 
 export default function Navbar(props) {
-  const navLinks = [
-    {text:"About", url:"/about"},
-    {text:"Services", url:"/services"},
-    {text:"Contact", url:"/contact"},
-    {text:"Projects", url:"/projects"}
-  ]
+
+
+  
+
 
   return (
     <header className={styles.navbar}>
-      <Link href="/">
+      <Link href="/" className={styles.logoContainer}>
         <img
           className={styles.logo}
           src="dm_logo_navybg.svg"
@@ -20,17 +20,12 @@ export default function Navbar(props) {
         />
       </Link>
 
-      {/* <nav className={styles.navLinks}>
-        <div className={styles.menuBtn}>
+      <nav className={styles.navLinks}>
+        <div className={styles.menuBtn} onClick={() => props.toggler()}>
           <GiHamburgerMenu />
         </div>
-
-        {navLinks.map((linky) => (
-          <Link href={linky.url}>
-            <a className={styles.link}>{linky.text}</a>
-          </Link>
-        ))}
-      </nav> */}
+        <NavLinks listStyle="headerList" linkStyle="headerLink" />
+      </nav>
     </header>
   );
 }

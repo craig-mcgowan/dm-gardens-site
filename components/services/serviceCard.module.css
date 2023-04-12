@@ -1,0 +1,68 @@
+.serviceCard {
+
+  max-height: 20em;
+  display: flex;
+  position: relative;
+  padding: 10px 2px
+
+  /* display: flex;
+  overflow:hidden; */
+}
+
+.serviceLabel {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: White;
+  font-size: 1.5rem;
+  font-weight: 800;
+  z-index: 1;
+  padding: 3px
+
+}
+
+.serviceLabelHovered {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: White;
+  backdrop-filter: blur(.25rem) ;
+  -webkit-backdrop-filter: blur(.25rem);
+  font-size: 1.5rem;
+  font-weight: 800;
+  z-index: 1;
+  padding: 3px
+
+}
+
+.serviceThumb {
+  max-width: 100%;
+  object-fit: cover;
+  filter:brightness(50%);
+  transition-duration: 200ms;
+}
+
+.serviceThumbHovered {
+  max-width: 100%;
+  object-fit: cover;
+  filter:none;
+  transition-duration: 400ms;
+
+}
+
+
+@media (width >= 768px) {
+  .serviceLabel {
+    font-size: 2rem;
+  }
+  .serviceLabelHovered {
+    font-size: 2rem;
+  }
+  .serviceCard {
+    max-width: 49%;
+    max-height: 20em;
+  }
+}
+  

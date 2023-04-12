@@ -1,16 +1,79 @@
-.main {
+
+.banner {
   display: flex;
   flex-flow: column;
   align-items: center;
+  background-image: url("https://res.cloudinary.com/dm9ig1vtk/image/upload/v1679490680/Dan%20Miller%20Gardens/Project%20Photos/IMG_0998_efvwrb.jpg");
+  background-size:cover;
+  height: 50vh;
 }
 
 .description {
-  margin-top: 10vh;
-  width: 50vw
+  margin-top: 18vh;
+  width: 50vw;
+   backdrop-filter: blur(.75rem) brightness(110%);
+  -webkit-backdrop-filter: blur(1rem);
+  border-radius: 20px;
+  display: flex;
+  flex-flow: column;
+  
 }
 
 @media only screen and (max-width:600px) {
   .description {
-    width: 80vw;
+    width: 85vw;
   }
+}
+
+.sectionHeader{
+  display:block;
+  width: 100%;
+  text-align: center;
+  color: var(--dm-navy);
+  font-size: 2em;
+  font-weight: 1000;
+
+}
+
+.dmGardens{
+  display:block;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: 1000;
+  margin: 0
+
+}
+
+.slogan{
+  display:block;
+  margin: 2px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  /* font-weight: 1000; */
+}
+
+
+@media (width >= 768px) {
+ .banner {
+  height: 70vh;
+ }
+ .description {
+  margin-top: 20vh;
+ }
+ .dmGardens{
+  font-size: 3em;
+  font-weight: 1000;
+  margin: 0
+
+}
+
+.slogan{
+  margin: 3px;
+  font-size: 1.5rem;
+  /* font-weight: 1000; */
+}
 }
