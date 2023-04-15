@@ -83,7 +83,7 @@ const ContactForm = (props) => {
         className={styles.form}
       >
         <fieldset className={styles.fieldset}>
-          {/* <legend>Contact Dan Miller Gardens</legend> */}
+      
           <label className={styles.labels} htmlFor="name">
             Your Name:
             <input
