@@ -1,28 +1,44 @@
 const testimonials = [
   {
-    name: "Donna V.",
+    name: "Geoff",
+    site: "Thumbtack",
+    review: "Presented great suggestions for urban garden beds. Sketched layouts, secured the plantings,and provided a timely installation. Thanks, Dan. Nice job!",
+  },
+  {
+    name: "Leanne",
+    site: "Google",
+    review:
+      "Highly recommend Dan! He understood our backyard standing water concerns and designed a rain garden with a beautiful and successful outcome.",
+  },
+  {
+    name: "Kaitlin",
+    site: "Thumbtack",
+    review:
+      "Dan is a professional in landscaping and outdoor design. I showed him our drab outdoor area, explained my goals (some shade, mood lighting, greenery and don't spend a ton of money), and he immediately had ideas for how to get the job done.",
+  },
+  {
+    name: "Anita",
+    site: "Google",
+    review:
+      "Attention to detail and safety was hallmark. Spring efforts provided a much enjoyed summer experience and we look forward to continued services! Overall, strong attention provided to work scopes and results improved performance, safety, and aesthetics.",
+  },
+  {
+    name: "Donna",
+    site: "Thumbtack",
     review:
       "Dan was great- best landscaper we’ve ever hired. He was quick to respond and accommodated a fast turnaround. He listened to my request for a colorful yard and had great suggestions. He was very professional and I highly recommend him.",
   },
   {
-    name: "Elise P.",
+    name: "Nick",
+    site: "Google",
     review:
-      "I’m so so glad I found Daniel! I wanted to put up lighting in my backyard but had no idea how to accomplish it. Daniel was prompt, professional, and gave thoughtful advice about options to consider and the pros and cons based on design and how it might feel in the space.",
+      "Dan and his team did an incredible job with our yard landscape and design. Dan is experienced, knowledgeable, and extremely professional. We hired Dan for landscape design, planting, mulching, and irrigation. Dan communicated well and completed the job in a timely manner.",
   },
   {
-    name: "Kaitlin M.",
+    name: "Maia",
+    site: "Thumbtack",
     review:
-      "I showed him our drab outdoor area, explained my goals (some shade, mood lighting, and greenery), and he immediately had ideas for how to get the job done.",
-  },
-  {
-    name: "Barbara A.",
-    review:
-      "We’ve just started using him but we are delighted with what he’s done so far. He knows a lot about landscaping and other things so we are very grateful we found him.",
-  },
-  {
-    name: "Maia R.",
-    review:
-      "Dan was super professional when redoing our front driveway and garden area, along with our indoor planter and front door planters! They all look so amazing, and he was quick when working and diligent.",
+      "Dan was super professional when redoing our front driveway and garden area, along with our indoor planter and front door planters! They all look so amazing, and he was quick when working and diligent. Thanks for everything!",
   },
 ];
 

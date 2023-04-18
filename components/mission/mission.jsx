@@ -10,11 +10,11 @@ export default function Mission(props) {
     <section>
       <div className={styles.sectionHeader}>Our Process</div>
       <div className={styles.valuesContainer}>
-        {values.map(({ value, icon, blurb }) => {
+        {values.map(({ value, icon, blurb },i) => {
         const Icon = icon
         
           return (
-            <div className={styles.valueCard}>
+            <div className={styles.valueCard} key={i}>
               <p className={styles.valueLabel}>{value}</p>
               <IconContext.Provider value={{ className: styles.serviceIcon }}>
                 <Icon />
