@@ -9,10 +9,20 @@
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.662);
   z-index: 10;
+  transition-duration: 400ms;
 }
 
 .menuBarOpen{
   height: 10em;
+  transition-duration: 400ms;
+}
+
+.navContainer{
+  display: flex;
+  width: 100vw;
+  position:absolute;
+  top: .1rem;
+  justify-content: space-between;
 }
 
 .navLinks {
@@ -42,7 +52,7 @@
   align-self: center;
   text-decoration: none;
   color: black; 
-  display: none;
+  display: block;
 }
 
 .menuBtn:hover {
@@ -52,9 +62,9 @@
 }
 
 .logo {
-  max-height: 5rem;
   margin-left: 10px;
-  margin-top: 10px
+  height:4.5em;
+  margin-top:5px
 }
 
 .logo:hover {
@@ -63,25 +73,24 @@
   transition: scale 0.3s ease-in-out;
 }
 
-@media only screen and (max-width:600px) {
-  .navbar {
-    height: 5em;
+@media (width >= 768px) {
+  .logo {
+    max-height:5em;
+    margin-top:10px
+  }
+  
+  .serviceLabel {
+    font-size: 2rem;
+  }
+  .serviceLabelHovered {
+    font-size: 2rem;
+  }
+  .serviceCard {
+    max-width: 49%;
+    max-height: 20em;
   }
   .menuBtn {
-    display:block
+    display: none;
   }
-  .logo{
-    height:5em;
-    margin-top:5px
-  }
-
-  .navLinks {
-    flex-direction: row-reverse;
-
-  }
-
-  .link {
-    display:none
-  }
-
 }
+  

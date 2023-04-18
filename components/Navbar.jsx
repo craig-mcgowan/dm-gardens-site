@@ -23,7 +23,7 @@ export default function Navbar(props) {
 
   return (
     <header className={barOpen ? styles.menuBarOpen : styles.navbar}>
-      <div>
+      <div className={styles.navContainer}>
       <Link href="/" className={styles.logoContainer}>
         <img
           className={styles.logo}
@@ -34,11 +34,11 @@ export default function Navbar(props) {
       <div className={styles.menuBtn} onClick={() => handleToggleMenubar()}>
         <GiHamburgerMenu />
       </div>
+      </div>
 
       <nav className={styles.navLinks}>
         <NavLinks listStyle="headerList" linkStyle="headerLink" />
       </nav>
-      </div>
     </header>
   );
 }
