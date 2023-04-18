@@ -38,7 +38,7 @@ const TestimonialCarousel = (props) => {
                 <span className={styles.testimonialText}>
                   "{testimonial.review}"
                 </span>{" "}
-                -{testimonial.name}{" "}
+                -{`${testimonial.name}, ${testimonial.site} Review`}{" "}
               </p>
               {/* <img className={styles.pic} src={service.img} alt={service.text} /> */}
             </div>
