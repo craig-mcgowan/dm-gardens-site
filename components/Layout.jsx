@@ -7,11 +7,11 @@ import SideBar from "./sideBar.jsx";
 export default function Layout({ children }) {
   const [barOpen, setBarOpen] = useState(false)
 
-  const handleToggleSidebar = () => {
+  const handleToggleMenubar = () => {
     setBarOpen(!barOpen)
   }
 
-  const closeSidebar = () => {
+  const closeMenuBar = () => {
     if (barOpen) {
       setBarOpen(false)
     }
@@ -23,12 +23,12 @@ export default function Layout({ children }) {
 
   return (
     <>
-      <div onClick={() => closeSidebar()}>
-        <Navbar toggler={handleToggleSidebar} linkStyle="headerLink" />
+      <div onClick={() => closeMenuBar()}>
+        <Navbar toggler={handleToggleMenubar} linkStyle="headerLink" />
         <main className={styles.mainContent}>{children}</main>
         <Footer />
       </div>
-      <SideBar barOpen={barOpen} className={styles.sidebar} />
+      {/* <SideBar barOpen={barOpen} className={styles.sidebar} /> */}
     </>
   );
 }

@@ -38,7 +38,7 @@
 .valueCard {
   width: 45vw;
   /* max-height: 40em; */
-  height:5rem;
+  height: 5rem;
   display: flex;
   position: relative;
   padding: 10px 2px;
