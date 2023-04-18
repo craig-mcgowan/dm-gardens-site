@@ -5,11 +5,10 @@ import styles from "../styles/NavLinks.module.css"
 
 const NavLinks = ({linkStyle, listStyle}) => {
     const pages = [
-    // {text:"About", url:"/about"},
-    // {text:"Services", url:"/services"},
-    {text:"Contact", url:"/contact"},
-    {text:"Services", url:"/services"},
-    // {text:"Services", url:"/services"},
+      {text:"About", url:"/about"},
+      {text:"Gallery", url:"/gallery"},
+      {text:"Request a Consultation", url:"/contact"},
+      {text:"Testimonials", url:"/testimonials"},
     ]
   const router = useRouter();
 

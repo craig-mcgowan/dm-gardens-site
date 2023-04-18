@@ -65,3 +65,11 @@
 .submit:hover {
   background-color: rgb(2, 126, 198);;
 }
+
+.hideThanks {
+  display: none
+}
+
+.showThanks {
+  display:inline;
+}

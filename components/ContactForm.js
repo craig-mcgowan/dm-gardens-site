@@ -43,6 +43,7 @@ const ContactForm = (props) => {
     name: "",
     email: "",
     phone: "",
+    address: "",
     contactPref: "email",
     subject: "",
     body: "",
@@ -56,7 +57,8 @@ const ContactForm = (props) => {
     formState: { isSubmitting, isSubmitSuccessful, isSubmitted },
   } = useForm({ defaultValues: emptyForm });
 
-  // const [formData, setFormData] = useState(emptyForm)
+  const [submitSuccess, setSubmitSuccess] = useState(false)
+
   const onSubmit = async (data) => {
     const res = await fetch("/api/form", {
       body: JSON.stringify(data),
@@ -71,6 +73,7 @@ const ContactForm = (props) => {
   useEffect(() => {
     if (isSubmitSuccessful) {
       reset();
+      setSubmitSuccess(true)
     }
   }, [isSubmitSuccessful, reset]);
 
@@ -88,7 +91,7 @@ const ContactForm = (props) => {
             Your Name:
             <input
               type="text"
-              placeholder="e.g. John Smith"
+              placeholder="Name"
               autoComplete="name"
               {...register("name", { required: true })}
             />
@@ -97,7 +100,7 @@ const ContactForm = (props) => {
             Your Email:
             <input
               type="email"
-              placeholder="name@email.com"
+              placeholder="Email"
               autoComplete="email"
               {...register("email", { required: true })}
             />
@@ -106,9 +109,18 @@ const ContactForm = (props) => {
             Your Phone Number:
             <input
               type="tel"
-              placeholder="555-555-5555"
+              placeholder="Phone Number"
               autoComplete="phone"
               {...register("phone", { required: false })}
+            />
+          </label>
+          <label className={styles.labels} htmlFor="address">
+            Project Address:
+            <input
+              type="address"
+              placeholder="Address"
+              autoComplete="address"
+              {...register("address", { required: false })}
             />
           </label>
           <p className={styles.prefChoicesLabel}>Preferred contact method:</p>
@@ -149,6 +161,7 @@ const ContactForm = (props) => {
           >
             {isSubmitting ? "Saving" : "Submit"}
           </button>
+          <p className={submitSuccess ? styles.showThanks : styles.hideThanks}>Thanks!</p>
         </fieldset>
       </form>
     </section>
