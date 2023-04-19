@@ -40,7 +40,7 @@ const TestimonialCarousel = (props) => {
                 </span>{" "}
                 -{`${testimonial.name}, ${testimonial.site} Review`}{" "}
               </p>
-              {/* <img className={styles.pic} src={service.img} alt={service.text} /> */}
+              
             </div>
           ))}
         </div>
