@@ -3,7 +3,7 @@ import services from "../../public/services";
 import ServiceCard from './serviceCard';
 
 export default function Services(props) {
- 
+ //services page
   return (
     <section className={styles.services} id="Services">
       <h3 className={styles.sectionHeader}>Services</h3>
