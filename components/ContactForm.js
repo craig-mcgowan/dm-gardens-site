@@ -43,6 +43,7 @@ const ContactForm = (props) => {
     name: "",
     email: "",
     phone: "",
+    address: "",
     contactPref: "email",
     subject: "",
     body: "",
@@ -111,10 +112,19 @@ const ContactForm = (props) => {
               {...register("phone", { required: false })}
             />
           </label>
+          <label className={styles.labels} htmlFor="address">
+            Project Address:
+            <input
+              type="text"
+              placeholder="123 Main Street, Haddonfield, NJ"
+              autoComplete="address"
+              {...register("address", { required: true })}
+            />
+          </label>
           <p className={styles.prefChoicesLabel}>Preferred contact method:</p>
           <div className={styles.prefChoices}>
             <label className={styles.radioBtn}>
-              <input type="radio"  {...register("contactPref")} value="email" />
+              <input type="radio" {...register("contactPref")} value="email" />
               Email
             </label>
             <label className={styles.radioBtn}>
